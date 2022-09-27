@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+.hero {
+    border: red 2px solid;
+}
+.nav_container {
+    border: purple 2px solid;
+}
+.nav_container img {
+    width: 100px;
+    height: 100px;
+}
+.nav_list {
+    border: pink 2px solid;
+}
+.nav_element {
+    border: blue 2px solid;
+}
+.nav_link {
+    border: green 2px solid;
+}
+.hero__main {
+    border: yellowgreen 2px solid;
+}
