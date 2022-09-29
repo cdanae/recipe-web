@@ -4,7 +4,6 @@
     padding: 0;
 }
 :root {
-    --white: #fff;
     --red: #BB053A;
     --black: #110F0F;
     --gray: #F6F6F6;
@@ -13,64 +12,88 @@ html {
     font-size: 62.5%;
 }
 
-/* .hero {
-    background-image: url("/images/citric-cake/citric-cake_S.jpg");
-    background-size: cover;
-    background-position: center;
-    background-color: #fff;
-    height: 80vh;
-    
-    min-height: 300px;
-    
-    border: red 2px solid;
-    color: var(--white);
-} */
-.hero {
-    position: relative; 
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.hero::before {    
-    content: "";
-    background-image: url("/images/citric-cake/citric-cake_S.jpg");
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 100
-    px;
-    left: 0px;
-    opacity: 0.75;
-}
-
-.nav_container {
+/* font-family: 'Neuton', serif; 400 y 500
+font-family: 'Playfair Display', serif; */
+body {
     position: relative;
-    color: #ffffff;  
-    font-size: 1.4rem;
-
-    border: purple 2px solid;
+    font-family: 'Neuton', serif;
+    background-color: var(--gray);
 }
-.nav_container img {
-    width: 100px;
-    height: 100px;
-}
-.nav_list {
-    border: pink 2px solid;
-}
-.nav_element {
-    border: blue 2px solid;
-}
-.nav_link {
-    border: green 2px solid;
+                /* HERO */
+.hero {
+    height: 100vh;
 }
 .hero__main {
-    position: relative;
-    color: #ffffff;  
-    font-size: 1.4rem;
-    
-    border: yellowgreen 2px solid;
+    background: url(/images/citric-cake/citric-cake_S.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 65vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
+.fa-bars{
+    font-size: 2.8rem;
+    margin: 2rem;
+}
+.nav_container {
+    background-color: rgb(238, 236, 236,.95);
+    width: 170px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: -180px;
+    transition: all 1.5s;
+}
+.fa-circle-xmark {
+    font-size: 2.5rem;
+    margin: 10px;
+}
+.nav_container ul li {
+    margin: 10px;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 0px;
+    
+}
+.nav_link {
+    color: black;
+    text-decoration: none;
+    font-size: 2.5rem;
+ 
+}
+.fa-circle-xmark {
+    color: black;
+}
+.logo {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+    margin-right: 2rem;
+    margin-top: 1.8rem;
+}
+.menu_activate {
+    left: 0px;
+}
+.hero_contain {
+    text-align: center;
+    width: 100vw;
+    height: 35vh;
+    color: var(--black);
+    padding: 10px 20px;
+}
+.hero_title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    
+}
+.hero_text {
+    font-size: 2.2rem;
+    margin-top: 20px;
+}
+
+            /* RECIPES */
