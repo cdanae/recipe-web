@@ -24,7 +24,7 @@ body {
     height: 100vh;
 }
 .hero__main {
-    background: url(/images/citric-cake/citric-cake_S.jpg);
+    background: url(https://cdanae.github.io/recipe-web/images/citric-cake/citric-cake_S.jpg);
     background-position: center;
     background-size: cover;
     color: white;
