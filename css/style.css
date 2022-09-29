@@ -102,45 +102,60 @@ body {
 
 
 @media (min-width: 1024px){
-   header{
-    display: flex;
-    position: relative;
-    flex-direction: row-reverse;
+   .hero{
+        display: flex;
+        position: relative;
+        flex-direction: row-reverse;
    } 
    .fa-solid.desktop{
-    display: none ;
+        display: none ;
    }
    .hero__main {
-    height: 75vh;
+        height: 75vh;
    }
-
-   h1{
-    position: absolute;
-    left: 20px;
-    text-align: center;
-    color: black;
-   }
-
-   .nav_container{
-    position: relative;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    transition: none;
-    background: transparent;
-   }
+    .logo{
+        position: absolute;
+        left: 20px;
+        text-align: center;
+        color: black;
+    }
+   
+    .nav_container{
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        transition: none;
+        background: transparent;
+    }
    .nav_container ul {
-    display: flex;
-    justify-content: space-evenly;
+        display: flex;
+        justify-content: space-evenly;
    }
    .nav_link {
-    color: white;
+        color: white;
+   }
+   .nav_link:hover {
+        border-bottom: 5px solid white;
+        padding-bottom: 5px;
+        transition: all .5s;
    }
    .hero_contain{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 75vh;
    }
+/* RECIPES */
 
+}
+
+@media (min-width: 1440px) {
+/* HERO */
+    .hero__main {
+        background-size: cover;
+        background-position: 0px -250px;
+        background-repeat: no-repeat;
+    }
+/* RECIPES */
 }
