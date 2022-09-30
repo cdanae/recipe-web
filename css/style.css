@@ -25,7 +25,7 @@ body {
     position: relative;
 }
 .hero__main {
-    background: url(https://cdanae.github.io/recipe-web/images/citric-cake/citric-cake_S.jpg);
+    background: url("./../images/citric-cake/citric-cake_S.jpg");
     background-position: center;
     background-size: cover;
     color: white;
@@ -97,7 +97,50 @@ body {
     margin-top: 20px;
 }
 
-            /* RECIPES */
+            /* CATALOG */
+.carousel {
+    width: 90%;
+    max-width: 120em;
+    /* background-color: #BB053A; */
+}
+.carousel .grande {
+    width: 500%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: all 5s ease;
+    transform: translateX(0%);
+
+    background-color: green;
+}
+.carousel .card {
+    width: calc(100% / 5 - 2em);
+    min-height: 10vh;
+    background-color: blue;
+}
+.carousel ul {
+    width: 100vw;
+    padding: 1em;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.carousel .spot {
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    border-radius: 50%;
+    
+    background-color: #cfcfcf;
+}
+.carousel .spot.activate {
+    background-color: var(--red);
+}
 
 
 
