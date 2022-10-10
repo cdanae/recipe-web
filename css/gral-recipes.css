@@ -1,0 +1,7 @@
+.hero {
+    height: 10vh;
+}
+.hero__main {
+    height: fit-content;
+    color: black;
+}
