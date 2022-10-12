@@ -40,41 +40,43 @@
         </div>    
 
     </header>
-    <main>
+    
+    <main class="container global_container">
         <section class="contact">
-            <picture>
+            <picture class="image">
                 <source media="(min-width: 1440px)" srcset="./images/contact-us/help_L.jpg">
                 <source media="(min-width: 1024px)" srcset="./images/contact-us/help_M.jpg">
                 <img src="./images/contact-us/help_S.jpg" alt="">
             </picture>
-            <article>
-                <h2></h2>
+            <article class="contact_main">
+                <h2 class="contact_title">Contáctanos</h2>
                 
-                <p></p>
+                <p class="contact_text">Si tienes dudas respecto a alguna receta o cómo sustituir ingredientes, contáctanos y resolveremos tus dudas.</p>
                 
-                <form action="">
-                    <label for="">
-                        Nombre:
-                        <input type="text" name="" id="">
+                <form class="contact_form">
+                    <label for="name">
+                        <span>Nombre:</span>
+                        <input type="text" placeholder="Nombre" class="form_name" id="name">
                     </label>
                     
-                    <label for="">
-                        Teléfono
-                        <input type="tel" name="" id="">
+                    <label for="tel">
+                    <span>Teléfono</span>
+                        <input type="tel" placeholder="Teléfono" class="form_tel" id="tel">
                     </label>
                     
-                    <label for="">
-                        Email
-                        <input type="email" name="" id="">
+                    <label for="email">
+                    <span>Email</span>
+                        <input type="email" placeholder="Email" class="form_email" id="email">
                     </label>
 
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-
-                    <p>
-                        <a href=""></a>
+                    <label for="message">
+                        <textarea placeholder="Mensaje" name="message"cols="30" rows="10"></textarea>
+                    </label>
+                    <input type="submit" value="ENVIAR" class="submit">
+                    <p class="contact_link">
+                        O escríbenos al:
+                        <a href="https://wa.me/525621306510?text=Hola! Tengo dudas">(52) 5621306510</a>
                     </p>
-
-                    <input type="submit" value="">
                 </form>
             </article>
         </section>
@@ -103,7 +105,7 @@
             
 
         <nav class="menu_footer">
-            <h3>Menú</h3>
+
             <ul>
                 <li>
                     <a href="./index.html" class="nav_link">Inicio</a>

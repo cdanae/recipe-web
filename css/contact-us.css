@@ -5,10 +5,112 @@
     height: fit-content;
     color: black;
 }
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.image {
+    display: none;
+}
+.contact_title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    color: var(--red);
+}
+.contact_text {
+    font-size: 1.6rem;
+    text-align: justify;
+    padding: 1.4rem 0;
+}
+
+.contact_form span {
+    display: none;
+}
+.contact_form label input, textarea {
+    width: 100%;
+    height: 4rem;
+    margin: 1rem 0;
+    padding: 1.4rem;
+    font-family: 'Neuton', serif;
+    font-size: 1.6rem;
+    border-radius: 25px;
+    border: none;
+    background-color: gainsboro;
+    outline-color: var(--red);
+}
+.contact_form textarea {
+    height: 15rem;
+    border-radius: 10px;
+}
+::placeholder {
+    font-family: 'Neuton', serif;
+    font-size: 1.6rem;
+}
+.contact_link {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+.submit {
+    width: 15rem;
+    height: 3.5rem;
+    margin: 1rem auto 0;
+    font-family: 'Neuton', serif;
+    font-size: 2rem;
+    border: var(--red) solid 2px;
+    border-radius: 20px;
+    text-align: center;
+    color: var(--red);
+    display: block;
+}
+.submit:hover {
+    background-color: var(--red);
+    color: white;
+}
 
 
+    
+@media (min-width:768px) {
+    .contact {
+        display: flex;
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+    .image {
+        display: block;
+        width: 50%;
+        height: 530px;
+        background-color: skyblue;
+    }
+    .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: -80px 0px;
+    }
+    .contact_main {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav_container {
+        left: 50%;
+        width: 50%;
+    }
+    .image img {
+        object-position: 0;
+    }
+    
+}
 @media (min-width: 1440px) {
+    .contact {
+        gap: 5rem;
+    }
+    .contact_main {
+        max-width: 500px;
+    }
     .footer {
-        height: 10vh;
+        height: 20vh;
     }
 }
