@@ -1,0 +1,14 @@
+.hero {
+    height: 10vh;
+}
+.hero__main {
+    height: fit-content;
+    color: black;
+}
+
+
+@media (min-width: 1440px) {
+    .footer {
+        height: 10vh;
+    }
+}
