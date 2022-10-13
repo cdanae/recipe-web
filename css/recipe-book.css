@@ -59,7 +59,21 @@
     color: white;
 }
 
-@media (min-width: 1024px){
+@media (min-width: 768px) {
+    .recipe-book .recipes {
+        flex-direction: row; 
+    }
+    .recipe_description {
+        height: 300px;
+        text-align: left;
+        padding: 3rem 2rem;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
     .nav_container {
         left: 50%;
         width: 50%;

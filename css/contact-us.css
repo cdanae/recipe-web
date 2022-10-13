@@ -85,7 +85,7 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
-        object-position: -80px 0px;
+        object-position: 100% 0;
     }
     .contact_main {
         width: 50%;

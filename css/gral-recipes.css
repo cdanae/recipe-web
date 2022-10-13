@@ -62,7 +62,16 @@
     padding: .5rem 0;
 } 
 
-
+@media (min-width: 768px) {
+    .container section {
+        margin-top: 2rem;
+    }
+    .recipe {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+}
 @media (min-width: 1024px) {
     .nav_container {
         left: 50%;
