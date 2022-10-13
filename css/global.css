@@ -52,9 +52,13 @@ body {
     margin: 10px;
     list-style: none;
     cursor: pointer;
-    text-align: center;
-    padding: 15px 0px;
+    padding: 5px 10px 0;
     
+}
+.nav_container ul i {
+    color: black;
+    font-size: 2rem;
+    margin-left: 1rem;
 }
 .nav_link {
     color: black;
