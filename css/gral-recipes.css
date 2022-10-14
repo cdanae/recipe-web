@@ -143,9 +143,12 @@
         grid-column: 1/2;
         grid-row: 3/4;
     }
+    .recipe_grid .method_extra {
+        grid-row: 4/5;
+    }
     .method_extra {
         grid-column: 1/4;
-        grid-row: 4/5;
+        grid-row: 3/4;
         margin-top: 1rem;
         
         display: flex;
@@ -160,15 +163,18 @@
 }
 
 @media (min-width: 1440px) {
-    .recipe {
-        grid-template-columns: 1fr 30% 25%;
-        grid-template-rows: 2% 50% 1fr;
-    }
     .photo img {
         width: 80%;
         margin: 0 auto;
     }
+    .method, .method_extra, .utensils_grid {
+        padding: 0 5rem;
+    }
     .footer {
-        height: 10vh;
+        height: 20vh;
+    }
+/* ESTILOS PARA CITRIC-CAKE Y MORAS-CAKE */
+    .recipe_grid {
+        grid-template-rows: 30px 500px 220px 1fr;
     }
 }

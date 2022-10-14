@@ -85,14 +85,19 @@
 }
 
 @media (min-width: 1440px) {
-    .recipe-book .recipes {
-        width: 80%;
-        margin-bottom: 100px;
+    .recipes {
+        margin-top: 5rem ;
+    }
+    .recipes .photos {
+        height: 400px;
+    }
+    .recipe_description {
+        padding: 3rem 5rem;
     }
     .photos img {
-        height: 800px;
+        height: 100%;
     }
     .footer {
-        height: 10vh;
+        height: 30vh;
     }
 }
