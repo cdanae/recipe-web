@@ -142,6 +142,9 @@ body {
         padding-bottom: 5px;
         transition: all .5s;
     }
+    .nav_container ul i {
+        display: none;
+    }
 
 /* FOOTER */
     .footer {
