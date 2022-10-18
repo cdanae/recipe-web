@@ -62,24 +62,24 @@
                 
                 <p class="contact_text">Si tienes dudas respecto a alguna receta o cómo sustituir ingredientes, contáctanos y resolveremos tus dudas.</p>
                 
-                <form class="contact_form">
+                <form class="contact_form" action="https://formsubmit.co/danyss.pasteleria@gmail.com" method="POST">
                     <label for="name">
                         <span>Nombre:</span>
-                        <input type="text" placeholder="Nombre" class="form_name" id="name">
+                        <input type="text" placeholder="Nombre" class="form_name" id="name" name="name" required>
                     </label>
                     
                     <label for="tel">
                     <span>Teléfono</span>
-                        <input type="tel" placeholder="Teléfono" class="form_tel" id="tel">
+                        <input type="tel" placeholder="Teléfono" class="form_tel" id="tel" name="tel">
                     </label>
                     
                     <label for="email">
                     <span>Email</span>
-                        <input type="email" placeholder="Email" class="form_email" id="email">
+                        <input type="email" placeholder="Email" class="form_email" id="email" name="email" required>
                     </label>
 
                     <label for="message">
-                        <textarea placeholder="Mensaje" name="message"cols="30" rows="10"></textarea>
+                        <textarea placeholder="Mensaje" name="message"cols="30" rows="10" required></textarea>
                     </label>
                     <input type="submit" value="ENVIAR" class="submit">
                     <p class="contact_link">
